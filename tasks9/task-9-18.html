@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let list = [
+            { product: "Apple", price: 25 },
+            { product: "Cherry", price: 32 },
+            { product: "Strawberry", price: 45 },
+        ];
+        let max = 0;
+        let word = "";
+        for (let i = 0; i < list.length; i++) {
+            if (list[i].price > max) {
+                word = list[i].product;
+                max = list[i].price;
+            }
+        }
+        console.log(word);
+    </script>
+</body>
+
+</html>

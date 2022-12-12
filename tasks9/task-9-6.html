@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let list = [];
+        let sum = 0;
+        let n = 0;
+        while (n++ < 100) {
+            list.push(n);
+        }
+        for (let i = 0; i < list.length; i++) {
+            if (list[i] >= 2) {
+                sum += list[i];
+                for (let j = 0; j < list.length; j++) {
+                    if (list[i] !== list[j] && list[j] % list[i] === 0) {
+                        list[j] = null;
+                    }
+                }
+            }
+        }
+        console.log(sum);
+    </script>
+</body>
+
+</html>

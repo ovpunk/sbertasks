@@ -1,0 +1,40 @@
+//Практическое задание 4.9
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let a = 2;
+    let b = 0;
+    let sign = "/";
+
+    switch (sign) {
+      case "*":
+        console.log(a * b);
+        break;
+      case "/":
+        if (b === 0) {
+          console.log("Делить на 0 нельзя!");
+        } else {
+          console.log(a / b);
+        }
+        break;
+      case "-":
+        console.log(a - b);
+        break;
+      case "+":
+        console.log(a + b);
+        break;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let list = [2, "привет", 23, true, 2, false, 2];
+        let numbers_list = [];
+        for (let i = 0; i < list.length; i++) {
+            if (list[i - 1] == false) {
+                continue;
+            } else if (typeof list[i] == "number") {
+                numbers_list.push(list[i]);
+            }
+        }
+        console.log(numbers_list);
+    </script>
+</body>
+
+</html>

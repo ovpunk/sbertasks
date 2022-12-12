@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let list_1 = [12, 3];
+        let list_2 = [2, 1];
+        let list_3 = [];
+        let result = [];
+        function getSquares() {
+            for (let i = 0; i < list_1.length; i++) {
+                list_3.push(list_1[i]);
+            }
+            for (let j = 0; j < list_2.length; j++) {
+                list_3.push(list_2[j]);
+            }
+            for (let k = 0; k < list_3.length; k++) {
+                result.push(list_3[k] ** 2);
+            }
+            return result;
+        }
+        console.log(getSquares());
+    </script>
+</body>
+
+</html>
