@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const values = [10, 15433, 1123, 22980];
+        const checkLength = (values) => {
+            let flag = false;
+            values.forEach(e => {
+                if (e.toString().search(/\d{4,4}$/) === 0) flag = true;
+            });
+            return flag;
+        }
+
+        console.log(checkLength(values));
+
+    </script>
+</body>
+,
+
+</html>

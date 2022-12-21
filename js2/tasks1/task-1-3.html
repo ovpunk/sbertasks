@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let firstDiv = "<div><p>Первый заголовок</p><p>Второй заголовок</p></div>"
+    let cnt = 0;
+    if (firstDiv.includes('<p>')) {
+      cnt += 1
+      if (firstDiv.includes('<p>', firstDiv.indexOf('<p>') + 1)) {
+        cnt += 1
+      }
+    }
+    if (firstDiv.includes('</p>')) {
+      cnt += 1
+      if (firstDiv.includes('</p>', firstDiv.indexOf('</p>') + 1)) {
+        cnt += 1
+      }
+    }
+    if (cnt == 4) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
+  </script>
+</body>
+
+</html>

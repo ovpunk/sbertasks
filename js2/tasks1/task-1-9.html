@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const emails = 'lubeuquefrezi-6350@mail.com crevivunuffeu-4516@mail.com';
+        //v.1
+        console.log(emails.split(' '))
+        //v.2
+        let reg = emails.match(/[a-z0-9-]+@[a-z]+\.[a-z]{2,3}/gi)
+        console.log(reg || [""])
+    </script>
+</body>
+
+</html>

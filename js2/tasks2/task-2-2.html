@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const partNumbers = ["ER1234COM", "FIV987451RU", "GE123JO", "P4321NO"]
+        const newPartNumbers = []
+        for (let i = 0; i < partNumbers.length; i++) {
+            if (partNumbers[i][partNumbers[i].length - 1] == partNumbers[i][partNumbers[i].length - 1].match(/\D/)) {
+                if (partNumbers[i][partNumbers[i].length - 2] == partNumbers[i][partNumbers[i].length - 2].match(/\D/)) {
+                    if (partNumbers[i][partNumbers[i].length - 3] == partNumbers[i][partNumbers[i].length - 3].match(/\d/)) {
+                        if (partNumbers[i][partNumbers[i].length - 4] == partNumbers[i][partNumbers[i].length - 4].match(/\d/)) {
+                            newPartNumbers.push(partNumbers[i])
+
+                        }
+                    }
+                }
+            }
+        }
+        console.log(newPartNumbers)
+
+
+
+
+    </script>
+</body>
+
+</html>
