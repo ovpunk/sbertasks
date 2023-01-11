@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+
+
+    let employee = [["firstName", "Ivan"], ["lastName", "Ivanov"]]
+
+    let index = 0
+    let flag = false
+    employee.forEach(el => {
+      if (el[0] === 'hireDate') {
+        flag = true
+        index = employee.findIndex(el => el[0] === 'hireDate')
+      }
+    })
+    if (flag === true) {
+      employee.splice(index, 1)
+    }
+    flag = false
+    employee.forEach(el => {
+      if (el[0] === 'hireDate') {
+        flag = true
+        index = employee.findIndex(el => el[0] === 'hireDate')
+      } else {
+        index = employee.length
+      }
+    })
+    if (flag === true) {
+      employee.splice(index, 1)
+    }
+    employee.splice(index, 0, ["jobName", "IT PROG"])
+    console.log(employee)
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

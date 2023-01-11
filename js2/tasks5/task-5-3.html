@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let firstName = "Александр";
+    let lastName = "Петров";
+    let str = `${firstName} ${lastName}`;
+    const user = {
+      firstName: firstName,
+      lastName: lastName,
+      get fullName() {
+        return `${this.firstName} ${this.lastName}`;
+      },
+      set fullName(value) {
+        return;
+        str = value;
+      },
+    };
+    arr = user.fullName.split(" ");
+    firstName = arr[0];
+    lastName = arr[1];
+  </script>
+</body>
+
+</html>
